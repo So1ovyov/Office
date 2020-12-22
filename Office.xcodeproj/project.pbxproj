@@ -10,7 +10,6 @@
 		F11AD025259201C8005FB2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD024259201C8005FB2E9 /* AppDelegate.swift */; };
 		F11AD027259201C8005FB2E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD026259201C8005FB2E9 /* SceneDelegate.swift */; };
 		F11AD029259201C8005FB2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD028259201C8005FB2E9 /* ViewController.swift */; };
-		F11AD02C259201C8005FB2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11AD02A259201C8005FB2E9 /* Main.storyboard */; };
 		F11AD02E259201C8005FB2E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11AD02D259201C8005FB2E9 /* Assets.xcassets */; };
 		F11AD031259201C8005FB2E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11AD02F259201C8005FB2E9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		F11AD024259201C8005FB2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11AD026259201C8005FB2E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F11AD028259201C8005FB2E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F11AD02B259201C8005FB2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F11AD02D259201C8005FB2E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11AD030259201C8005FB2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F11AD032259201C8005FB2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				F11AD024259201C8005FB2E9 /* AppDelegate.swift */,
 				F11AD026259201C8005FB2E9 /* SceneDelegate.swift */,
 				F11AD028259201C8005FB2E9 /* ViewController.swift */,
-				F11AD02A259201C8005FB2E9 /* Main.storyboard */,
 				F11AD02D259201C8005FB2E9 /* Assets.xcassets */,
 				F11AD02F259201C8005FB2E9 /* LaunchScreen.storyboard */,
 				F11AD032259201C8005FB2E9 /* Info.plist */,
@@ -126,7 +123,6 @@
 			files = (
 				F11AD031259201C8005FB2E9 /* LaunchScreen.storyboard in Resources */,
 				F11AD02E259201C8005FB2E9 /* Assets.xcassets in Resources */,
-				F11AD02C259201C8005FB2E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +142,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F11AD02A259201C8005FB2E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F11AD02B259201C8005FB2E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F11AD02F259201C8005FB2E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2W2AQ8GG8;
 				INFOPLIST_FILE = Office/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Office;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2W2AQ8GG8;
 				INFOPLIST_FILE = Office/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Office;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
