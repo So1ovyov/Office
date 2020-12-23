@@ -19,11 +19,12 @@ class InfoViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        self.infoTableView.delegate = self
         self.infoTableView.dataSource = self
         
         setupTableView()
         
-        infoTableView.register(UITableViewCell.self, forCellReuseIdentifier: "infoCell")
+        infoTableView.register(InfoTableViewCell.self, forCellReuseIdentifier: "infoCell")
     }
     
     private func setupTableView() {
@@ -43,7 +44,7 @@ class InfoViewController: UIViewController {
     
 }
 
-extension InfoViewController: UITableViewDataSource {
+extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return persons.count
@@ -59,16 +60,22 @@ extension InfoViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! InfoTableViewCell
         let email = persons[indexPath.section].email
         let phoneNumber = persons[indexPath.section].phoneNumber
         if indexPath.row == 0 {
-            cell.textLabel?.text = "\(email ?? "")"
+            cell.infoLabel.text = "\(email ?? "")"
+            cell.infoImage.image = UIImage(named: "mail")
         } else {
-            cell.textLabel?.text = "\(phoneNumber ?? "")"
+            cell.infoLabel.text = "\(phoneNumber ?? "")"
+            cell.infoImage.image = UIImage(named: "call")
         }
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
 }

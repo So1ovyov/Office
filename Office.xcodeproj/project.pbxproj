@@ -17,6 +17,7 @@
 		F11AD05B259215C7005FB2E9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD05A259215C7005FB2E9 /* Person.swift */; };
 		F11AD05E2592169F005FB2E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD05D2592169F005FB2E9 /* DataManager.swift */; };
 		F11AD06F2592286D005FB2E9 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AD06E2592286D005FB2E9 /* MoreViewController.swift */; };
+		F1F8A952259347A500FC5BBD /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8A951259347A500FC5BBD /* InfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F11AD05A259215C7005FB2E9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F11AD05D2592169F005FB2E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F11AD06E2592286D005FB2E9 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		F1F8A951259347A500FC5BBD /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				F11AD050259211EF005FB2E9 /* ContactsViewController.swift */,
 				F11AD06E2592286D005FB2E9 /* MoreViewController.swift */,
 				F11AD053259211F8005FB2E9 /* InfoViewController.swift */,
+				F1F8A951259347A500FC5BBD /* InfoTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				F11AD05B259215C7005FB2E9 /* Person.swift in Sources */,
 				F11AD025259201C8005FB2E9 /* AppDelegate.swift in Sources */,
 				F11AD058259212FC005FB2E9 /* LaunchViewController.swift in Sources */,
+				F1F8A952259347A500FC5BBD /* InfoTableViewCell.swift in Sources */,
 				F11AD05E2592169F005FB2E9 /* DataManager.swift in Sources */,
 				F11AD051259211EF005FB2E9 /* ContactsViewController.swift in Sources */,
 				F11AD06F2592286D005FB2E9 /* MoreViewController.swift in Sources */,
